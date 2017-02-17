@@ -1,0 +1,11 @@
+version: "2"
+services:
+  hhvm-3.18.0-fastcgi-test:
+    command: /app/entrypoint.sh
+    container_name: "hhvm-3.18.0-fastcgi-test"
+    image: "hhvm-3.18.0-fastcgi-test:latest"
+    ports:
+    - "9000:9000" # webserver
+    - "9001:9001" # admin server
+    volumes:
+    - ./:/app
