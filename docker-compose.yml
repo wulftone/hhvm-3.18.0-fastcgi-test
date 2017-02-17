@@ -7,5 +7,6 @@ services:
     ports:
     - "9000:9000" # webserver
     - "9001:9001" # admin server
+    - "9002:9002" # fastcgi server
     volumes:
     - ./:/app
